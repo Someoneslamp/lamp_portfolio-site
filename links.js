@@ -1,7 +1,7 @@
 // Someoneslamp
 // "links.js"
 // Redirects users to other webpages when clicking referral link.
-// Last Edit: 3/2/2024
+// Last Edit: 7/24/2024
 
 // Functions
 function Setup() {
