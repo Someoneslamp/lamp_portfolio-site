@@ -1,0 +1,30 @@
+// Someoneslamp
+// "links.js"
+// Redirects users to other webpages when clicking referral link.
+// Last Edit: 3/2/2024
+
+// Functions
+function Setup() {
+    // Get Document Images
+    for (let ElementIdx = 0; ElementIdx < document.images.length; ElementIdx++) {
+        // Make redirect for users
+        let ImageRedirect = document.images[ElementIdx];
+        
+        if (!(ImageRedirect && ImageRedirect.getAttribute("redirect"))) {
+            ElementIdx++;
+            continue;
+        };
+
+        ImageRedirect.setAttribute("style", "cursor: pointer;");
+
+        ImageRedirect.addEventListener("click", () => {
+            window.open(ImageRedirect.getAttribute("redirect"));
+        })
+    };
+
+    return
+};
+
+// Listeners
+// Wait until content is loaded
+window.addEventListener("DOMContentLoaded", Setup);
