@@ -11,7 +11,6 @@ function Setup() {
         let ImageRedirect = document.images[ElementIdx];
         
         if (!(ImageRedirect && ImageRedirect.getAttribute("redirect"))) {
-            ElementIdx++;
             continue;
         };
 
