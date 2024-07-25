@@ -92,3 +92,25 @@ body {
     text-align: center;
     font-size: xx-large;
 }
+
+.section_div_darker {
+    display: grid;
+    flex-wrap: wrap;
+    background-color: rgb(82, 95, 107);
+    padding: 10px;
+    height: 200%px;
+}
+
+.section_div_darker h {
+    text-align: center;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size:xx-large
+}
+
+.section_div_darker p {
+    text-align: center;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size:x-large
+}
